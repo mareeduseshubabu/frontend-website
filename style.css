@@ -1,0 +1,224 @@
+*{
+  margin:0px;
+  padding:0px;
+  overflow:auto;
+  }
+  .topheader{
+   height:25px;
+   background-color:black;
+   font-size:15px;
+   color:white;
+   padding-left:7px;
+   padding-top:4px;
+   padding-right:8px;
+   font-family:calibri;
+  }
+  .left{
+     float:left;
+    
+  }
+  .right{
+  float:right;
+  
+  }
+  
+  .header{
+    height:80px;
+  }
+  .row{
+   width:100%;
+   padding-top:15px;
+  }
+  
+  .header img{
+   width:60px;
+   height:60px;
+  }
+  .hpart1{
+      width:5%;
+      float:left;
+      padding-left:5px;
+  }
+  
+  .hpart2{
+      width:50%;
+      float:left;
+      font-size:40px;
+      font-family:calibri;
+      color:green;
+      padding-left: 8px;
+  }
+  
+  .login{
+   text-decoration:none;
+   color:white;
+   
+  }
+  
+  .hpart3{
+      width:7%;
+      float:right;
+      background-color:green;
+      padding:7px;
+      margin-top:10px;
+      margin-right: 20px;
+      text-align:center;
+      border-radius:10px;
+      font-size:20px;
+      
+  }
+  
+  .hpart3:hover{
+    background-color:red;
+    
+  }
+  
+  .menubar{
+    height:25px;
+    background-color:grey;
+    font-size:15px;
+  }
+  .menubar ul{
+      width:100%;
+      list-style-type: none;
+  }
+  .menubar ul li{
+      float:left;
+  }
+  .menubar ul li a{
+      display: block;
+      text-decoration: none;
+      color:black;
+      padding-left:35px;
+      padding-right:35px;
+      font-weight: bold;
+      font-family: calibri;
+      font-size:18px;
+      border-radius: 10px;
+      
+  }
+  .menubar ul li a:hover{
+      color:white;
+      background-color: blue;
+      height:25px;
+      
+  }
+  .bodypart{
+    height:auto;
+    font-size:15px;
+    
+  }
+  .sectitle{
+      text-align: center;
+      color: red;
+      font-family: calibri;
+      font-size: 30px;
+      font-weight: normal;
+  }
+  .courses{
+      width:80%;
+      margin:0 auto auto;
+  }
+  .divcourse{
+    text-align: center;
+      border:1px solid grey;
+      width:20%;
+      height:200px; 
+      box-shadow: 2px 3px 6px  rgb(0, 0, 0); 
+      border-radius: 10px;
+      float: left;
+      margin:3% 2%; 
+  }
+  .divcourse img{
+      width:100%;
+      border-radius: 10px;
+      height:55%;        
+  }
+  .divcourse a{
+      text-transform: capitalize;
+      text-decoration: none;
+      width:100%;
+      font-size:20px;
+      color:black;
+      padding:10px;
+      padding-left:30px;
+      font-family:calibry;
+  }
+  .success img{
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    border: 2px solid rgb(255, 254, 254);
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px 2px rgb(0, 0, 0);
+  }
+  .about{
+    width: 0 auto auto;
+    text-align: center;
+  }
+  .footer{
+    height:400px;
+    width: 100%;
+    background-color:black;
+    font-size:15px;
+    color: yellow;
+    padding: 30px;
+    font-size: 15px;
+  }
+  .part20{
+    width: 20%;
+    float: left;
+    margin-right: 80px;
+  }
+  .part40{
+    width: 40%;
+    float: left;
+  }
+  .footerform{
+    width: 385px;
+  }
+  .btn{
+    background-color:white;
+  }
+  .btn:hover{
+    background-color: green;
+  }
+  .part20 a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .loginform{
+    width: 20%;
+    margin: 0 auto auto;
+    text-align: center;
+    border: 5px solid green;
+    margin-bottom: 130px;
+    font-family: calibri;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 30px;
+    font-weight: bold;
+  }
+  .enroll{
+    background-color:green ;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    border-radius: 7px;
+    width: 100px;
+    margin-top: 10px;
+  }
+  .enroll:hover{
+   background-color: red;
+  }
+  .note{
+    background-color:yellow;
+    color: red;
+    text-align: center;
+    border: 1px dashed red;
+    padding: 10px;
+    font-size: 20px;
+    font-family:'Times New Roman';
+    font-weight: bold;
+  }

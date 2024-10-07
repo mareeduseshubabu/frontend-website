@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Website-Assignment</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script type="text/javascript">
+
+	function check()
+	{
+		var uname=document.getElementById("uname").value;
+		var pwd=document.getElementById("pwd").value;
+
+		if(uname=="nicecomputers" && pwd=="nice123")
+		{
+			document.getElementById("form1").action="home.html";
+		}
+	    else
+		{
+			document.getElementById("err").innerHTML="USER NAME  & PASSWORD IS INCORRECT";
+			return false;
+		}
+	}
+  </script>
+
+
+ </head>
+ <body>
+  
+	<div class="topheader">
+		<div class="left">naganaresh2004@gmail.com</div>
+		<div class="right">Instagram-Id:NiceSoft</div>
+	</div>
+
+	<div class="header">
+		<div class="row">
+			<div class="hpart1"> <img src="C:\Users\seshu\OneDrive\Desktop\index\images\nicelogo.jpg"></div>
+			<div class="hpart2">NICE COMPUTERS</div>
+			<div class="hpart3"><a href="login.html" class="login">LOGIN</a></div>
+		</div>
+	</div>
+
+	<div class="menubar">
+	 <ul>
+		<li><a href="#">Home </a></li>
+		<li><a href="#about">About </a></li>
+		<li><a href="#courses">Courses</a></li>
+		<li><a href="#success">SuccessMileStones</a></li>
+	 </ul>
+	</div>
+
+	<div class="bodypart">
+	   <br/><br/>
+		<h1 class="sectitle" >Courses Contents:Programming Basics</h1><br/><br/>
+        
+        <div style="text-align:center; font-size: 18px;">
+        <img src="C:\Users\seshu\OneDrive\Desktop\index\images\java.jpg" style="width: 640px; height:480px;"/>
+        <h2 style="color: green;">Contents</h2><br/>
+        Introduction of Java Language<br/>
+        Fundamentals of Java Language<br/>
+        Data types,variables,identifiers of Java Language<br/>
+        Structure of Java Language<br/>
+        Arrays,pointers,structures,unions of Java Language<br/>
+        <br/><br/>
+        </div>
+      <br/><br/>
+      <p class="note">Note:pleace login to enroll in this course</p>
+      <br/>
+	  <div id="err" style="color:red;text-align:center;">
+		
+	  </div>
+   </div>   
+
+	<div class="footer">
+
+		<div class="part20">
+			<h1>Youtube Channel Links</h1><br/>
+			<a href="#">Programing basics</a><br/>
+                <a href="#">C Programing</a><br/>
+                <a href="#">C++</a><br/>
+                <a href="#">Java</a><br/>
+                <a href="#">Python</a><br/>
+                <a href="#">Oracle</a><br/>
+                <a href="#">Mysql</a><br/>
+                <a href="#">Html</a>
+		</div>
+
+		<div class="part20">
+			<h1>Social Media Links</h1><br/>
+			<a href="#">Facebook </a><br/>
+			<a href="#">Twitter </a><br/>
+			<a href="#">LinkedIn</a><br/>
+			<a href="#">Telegram</a><br/>
+			<a href="#">Instagram</a><br/>
+		
+		</div>
+
+		<div class="part40">
+			<h1>Submit Your Requests Here</h1><br/>
+
+			<form>
+				email:<br/>
+				<input type="email" class="footerform"> <br/>
+				Request:<br/>
+				<textarea rows="10" cols="50"> </textarea><br/><br/>
+				<input type="submit" value="Submit" class="footerform btn"><br/>
+			</form>
+		
+
+		</div>
+
+	</div>
+
+ </body>
+</html>

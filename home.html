@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Website-Assignment|NICE COMPUTERS</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript">
+            var courses=new Array();
+            var ccount=0;
+            function enrollme(course)
+            {
+                courses[ccount]=course;
+                ccount=ccount+1;
+                var clist="";
+                for(var i=0; i<courses.length; i++) 
+                clist=clist+"/n"+courses[i];
+                var message="congratulations you are successfully enrolled by the following course /n/n"+clist;
+                alert(message); 
+            } 
+            function check()
+            {
+                try{
+             var urlstring=window.location.search;
+             var checkstr=urlstring.substring(1); 
+             var splitarray=checkstr.split('&',2);
+             var uname=splitarray[0].substring(splitarray[0].indexOf('=')+1);
+             var pwd=splitarray[1].substring(splitarray[1].indexOf('=')+1);
+             if(uname=="nicecomputers" && pwd=="nice123")
+		   {
+			alert("Dear member welcome to course enrollment page");
+		   }
+	         else
+		   {
+			  alert("you must login properly to access this page");
+              window.location.href="login.html";
+		    }
+             alert(uname);
+             alert(pwd);
+
+            }
+            catch(err)
+            {
+                alert("you must login properly to access this page");
+                window.location.href="login.html";
+            }
+            }
+        </script>
+    </head>
+    <body onload="check()">
+        <div class="topheader">
+	        <div class="left">naganaresh2004@gmail.com</div>
+	        <div class="right">Instagram id: NiceSoft</div>
+        </div>
+        <div class="header">
+		    <div class="row">
+			    <div class="hpart1">  <img src="C:\Users\seshu\OneDrive\Desktop\index\images\nicelogo.jpg"" /> </div>
+			    <div class="hpart2">NICE COMPUTERS</div>
+			    <div class="hpart3">  <a href="index.html" class="login">Logout</a>  </div>
+		    </div>
+        </div>
+
+        <div class="menubar">
+	        <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutus">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#success">Success Milestone</a></li>
+            </ul>
+        </div>
+
+        <div class="bodypart">
+            <br/>
+	        <h1 class="sectitle" id="courses">Courses Available</h1>
+            <br/>
+            <div class="courses">
+                <br/>
+                <div class="divcourse">
+                    <img src="C:\Users\seshu\OneDrive\Desktop\index\images\c-language.png" />
+                    <br/><br/>
+                    <a href="#">C Language</a>
+                    <br/>
+                    <button class="enroll" onclick="enrollme('c Language')">enroll</button>
+                </div>
+
+                <div class="divcourse">
+                    <img src="C:\Users\seshu\OneDrive\Desktop\index\images\c++.jpg" />
+                    <br/><br/>
+                    <a href="#">C++</a>
+                    <br/>
+                    <button class="enroll" onclick="enrollme('c++')">enroll</button>
+                </div>
+
+                <div class="divcourse">
+                    <img src="C:\Users\seshu\OneDrive\Desktop\index\images\java.jpg" />
+                    <br/><br/>
+                    <a href="#">Java</a>
+                    <br/>
+                    <button class="enroll" onclick="enrollme('java')">enroll</button>
+                </div>
+
+                <div class="divcourse">
+                    <img src="C:\Users\seshu\OneDrive\Desktop\index\images\python.jpg" />
+                    <br/><br/>
+                    <a href="#">python</a>
+                    <br/>
+                    <button class="enroll" onclick="enrollme('python')">enroll</button>
+                </div>
+
+                <div class="divcourse">
+                    <img src="C:\Users\seshu\OneDrive\Desktop\index\images\oracle.jpg" />
+                    <br/><br/>
+                    <a href="#">Oracle</a>
+                    <br/>
+                    <button class="enroll" onclick="enrollme('python-Django')">enroll</button>
+                </div>
+
+                <div class="divcourse">
+                    <img src="C:\Users\seshu\OneDrive\Desktop\index\images\mysql.jpg" />
+                    <br/><br/>
+                    <a href="#">Mysql</a>
+                    <br/>
+                    <button class="enroll" onclick="enrollme('.Net')">enroll</button>
+                </div>
+
+                <div class="divcourse">
+                    <img src="C:\Users\seshu\OneDrive\Desktop\index\images\html.jpg" />
+                    <br/><br/>
+                    <a href="#">Html</a>
+                    <br/>
+                    <button class="enroll" onclick="enrollme('c#')">enroll</button>
+                </div>
+
+                <div class="divcourse">
+                    <img src="C:\Users\seshu\OneDrive\Desktop\index\images\css.png" />
+                    <br/><br/>
+                    <a href="#">Css</a>
+                    <br/>
+                    <button class="enroll" onclick="enrollme('mysql')">enroll</button>
+                </div>
+
+                <div class="divcourse">
+                    <img src="C:\Users\seshu\OneDrive\Desktop\index\images\javascript.png" />
+                    <br/><br/>
+                    <a href="#">Javascript</a>
+                    <br/>
+                    <button class="enroll" onclick="enrollme('Html')">enroll</button>
+                </div>
+
+                <div class="divcourse">
+                    <img src="C:\Users\seshu\OneDrive\Desktop\index\images\bootstrap.jpg" />
+                    <br/><br/>
+                    <a href="#">Bootstrap</a>
+                    <br/>
+                    <button class="enroll" onclick="enrollme('css')">enroll</button>
+                </div>
+
+                <div class="divcourse">
+                    <img src="C:\Users\seshu\OneDrive\Desktop\index\images\react.png" />
+                    <br/><br/>
+                    <a href="#">React</a>
+                    <br/>
+                    <button class="enroll" onclick="enrollme('javascript')">enroll</button>
+                </div>
+
+                <div class="divcourse">
+                    <img src="C:\Users\seshu\OneDrive\Desktop\index\images\jquery.png" />
+                    <br/><br/>
+                    <a href="#">Jquery</a>
+                    <br/>
+                    <button class="enroll" onclick="enrollme('cloud')">enroll</button>
+                </div>
+            </div>
+        </div>
+        <hr/><br/><br/>
+        <h1 class="sectitle" id="success">SuccessMilestones</h1>
+        <br/><br/>
+        <div class="success">
+            <marquee>
+                <img src="C:\Users\seshu\OneDrive\Desktop\index\images\success.jpg">
+                <img src="C:\Users\seshu\OneDrive\Desktop\index\images\success.jpg">
+                <img src="C:\Users\seshu\OneDrive\Desktop\index\images\success.jpg">
+                <img src="C:\Users\seshu\OneDrive\Desktop\index\images\success.jpg">
+                <img src="C:\Users\seshu\OneDrive\Desktop\index\images\success.jpg">
+                <img src="C:\Users\seshu\OneDrive\Desktop\index\images\success.jpg">
+                <img src="C:\Users\seshu\OneDrive\Desktop\index\images\success.jpg">
+                <img src="C:\Users\seshu\OneDrive\Desktop\index\images\success.jpg">
+            </marquee>
+        </div>
+        <br/><br/><br/>
+        <hr/>
+        <h1 class="sectitle" id="aboutus">About</h1>
+        <center>NICE COMPUTERS is an institute was established on 23rd March 2010<br/>
+            Which is directed by: Thopula Naga Naresh<br/>
+            It is an ISO-Certified institute.<br/>
+            <h3 class="h">Courses offered are:</h3><br/>
+            Pacakges: MS office,DTP,Accounts, Photoshop<br/>
+            Languages: C, C+, C++,java, python, .net<br/>
+            Databases: Oracle, mysql, Ms-sql,sql server, dbase, sybase, dbl<br/>
+            Web designing Courses:html, css, java script, bootstrap, dom, jquery<br/>
+            Frame works:spring and hybernet, django<br/>
+            Civil courses: AUTOCAD, STADPRO, PROVIEW<br/>
+            email:naganareshthopula@gmail.com<br/>Phone:9705945020</center>
+        <br/><br/>
+        <div class="footer">
+	        <div class="part20">
+            <h1>Youtube links<br/>
+                <a href="#">Programing basics</a><br/>
+                <a href="#">C Programing</a><br/>
+                <a href="#">C++</a><br/>
+                <a href="#">Java</a><br/>
+                <a href="#">Python</a><br/>
+                <a href="#">Oracle</a><br/>
+                <a href="#">Mysql</a><br/>
+                <a href="#">Html</a> 
+            </h1>
+            </div>
+            <div class="part20">
+            <h1>Socialmedia links</h1><br/>
+            <a href="#">facebook</a><br/>
+            <a href="#">Twitter</a><br/>
+            <a href="#">Instagram</a><br/>
+            <a href="#">whatsapp</a><br/>
+            <a href="#">linkedin</a><br/>
+            <a href="#">Telegram</a>
+
+            </div>
+            <div class="part40">
+            <h1>Submit your request here</h1><br/>
+            <form>
+                email:<br/>
+                <input type="email" class="footerform"><br/>
+                request:<br/>
+                <textarea rows="10" cols="50"></textarea><br/>
+                <input type="submit" value="submit" class="footerform btn">
+
+            </form>
+            </div>
+        </div>
+
+    </body>
+</html>
